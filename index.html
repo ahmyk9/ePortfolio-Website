@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/logo.jpg">
+    <title>Ahmed Khilji</title>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/20b352c5e7.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("9q8O9v7mpnCW-sjga");
+        })();
+    </script>
+</head>
+
+<body>
+    <section id="landing-page">
+        <nav>
+            <figure>
+                <img id="personal-logo" src="./assets/logo.png" alt="">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link ">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">About</a>
+                </li>
+                <li class="nav__link ">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Projects</a>
+                </li>
+                <li class="nav__link ">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Skills</a>
+                </li>
+                <li class="nav__link ">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Contact</a>
+                </li>
+                <li class="nav__link ">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    "><i class="fa-solid fa-circle-half-stroke"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hi</h1>
+                <h1 class="title blue">I'm Ahmed</h1>
+                <p class="header__para"> I'm a <b class="blue">Software Engineer</b> with a strong passion for building
+                    applications and working on interesting projects. <br> Here's a bit more <b class="blue click" onclick="toggleModal()">about me
+                    </b>
+                </p>
+                <div class="social__list">
+                    <a href="https://github.com/ahmyk9" target="_blank" class="social__link click">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmed-khilji-45b509169/" target="_blank"
+                        class="social__link click">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="./assets/Ahmed Khilji Resume.pdf" target="_blank" class="social__link click">
+                        <i class="fa-regular fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="header__content undraw">
+                <img src="/assets/undrawimg.png" alt="">
+            </div>
+        </header>
+        <button class="mail__btn click" onclick="toggleModal()">
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon" click>
+            </div>
+        </a>
+
+        <div class="modal">
+            <div class="modal__half modal__about"> 
+                <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Software Engineer</h4>
+                <p class="modal__para">
+                    I'm a 23 year old Australian <b class="blue">Software Engineer </b> with a strong passion for this field and love working on interesting projects.
+                    <br>
+                    I'm currently studying <b class="blue">Bachelor of Software Engineering at University of Technology Sydney </b>with a GPA of 5.5/7 and have worked on many projects and always working on more!
+                </p>
+
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="/assets/html-logo.png" alt="">
+                    <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="/assets/css-logo.png" alt="">
+                    <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="/assets/js-logo.png" alt="">
+                    <span class="language__name">Javascript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="/assets/react-logo.png" alt="">
+                    <span class="language__name">React</span>
+                    </figure>
+                </div>
+
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="/assets/java-logo.png" alt="">
+                    <span class="language__name">Java</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="/assets/c++-logo.png" alt="">
+                    <span class="language__name">C++</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="/assets/git-logo.png" alt="">
+                    <span class="language__name">Git</span>
+                    </figure>
+                </div>
+
+            </div>
+            <div class="modal__half modal__contact">
+                <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
+                <h3 class="modal__title--contact modal__title">Let's have a chat!</h3>
+                <h4 class="modal__sub-title--contact modal__sub-title">Im currently looking for work experience!</h4>
+                <form action="" id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label" for="name">Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" for="email">Email</label>
+                        <input class="input" name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" for="message">Message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+
+                    <button id="contact__submit" class="form__submit">Send</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <div class="loader">
+                        <div class="box-load1"></div>
+                        <div class="box-load2"></div>
+                        <div class="box-load3"></div>
+                      </div>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking with you.
+                </div>
+           
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title"> Here are some of my <span class="blue"> projects </span></h1>
+                <ul class="projects__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/black.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title"> Project X </h3>
+                                <h4 class="project__description--sub-title"> Languages used </h4>
+                                <p class="project__description--para"> Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Doloribus, ab reprehenderit et tempora, eveniet esse maiores
+                                    commodi fugit voluptate quasi illo atque asperiores illum praesentium distinctio
+                                    itaque non, accusantium iure! </p>
+                                <div class="project__description--links">
+                                    <a href="#" class="project__description--links">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project__description--links">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/black.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title"> Project X </h3>
+                                <h4 class="project__description--sub-title"> Languages used </h4>
+                                <p class="project__description--para"> Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Doloribus, ab reprehenderit et tempora, eveniet esse maiores
+                                    commodi fugit voluptate quasi illo atque asperiores illum praesentium distinctio
+                                    itaque non, accusantium iure! </p>
+                                <div class="project__description--links">
+                                    <a href="#" class="project__description--links">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project__description--links">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/black.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title"> Project X </h3>
+                                <h4 class="project__description--sub-title"> Languages used </h4>
+                                <p class="project__description--para"> Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Doloribus, ab reprehenderit et tempora, eveniet esse maiores
+                                    commodi fugit voluptate quasi illo atque asperiores illum praesentium distinctio
+                                    itaque non, accusantium iure! </p>
+                                <div class="project__description--links">
+                                    <a href="#" class="project__description--links">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project__description--links">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <figure>
+                    <img class="footer__logo" src="/assets/logo2.png" alt="">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="https://github.com/ahmyk9" target="blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                "> Github </a>
+                    <a href="https://www.linkedin.com/in/ahmed-khilji-45b509169/" target="blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                "> LinkedIn </a>
+                    <a href="#" target="blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                "> Contact </a>
+                    <a href="#" target="blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                "> Resume </a>
+                </div>
+                <div class="footer__copyright"> Copyright © 2023 Ahmed Khilji </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
