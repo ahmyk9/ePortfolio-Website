@@ -27,34 +27,34 @@
             </figure>
             <ul class="nav__link--list">
                 <li class="nav__link ">
-                    <a href="#" class="
+                    <a href="#" onclick="toggleModal()" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
                     ">About</a>
                 </li>
                 <li class="nav__link ">
-                    <a href="#" class="
+                    <a href="#projects" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
                     ">Projects</a>
                 </li>
-                <li class="nav__link ">
+                <!-- <li class="nav__link ">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
                     ">Skills</a>
-                </li>
+                </li> -->
                 <li class="nav__link ">
-                    <a href="#" class="
+                    <a href="#" onclick="toggleModal()" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
                     ">Contact</a>
                 </li>
-                <li class="nav__link ">
+                <li class="nav__link" onclick="toggleContrast()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -68,7 +68,7 @@
                 <h1 class="title">Hi</h1>
                 <h1 class="title blue">I'm Ahmed</h1>
                 <p class="header__para"> I'm a <b class="blue">Software Engineer</b> with a strong passion for building
-                    applications and working on interesting projects. <br> Here's a bit more <b class="blue click" onclick="toggleModal()">about me
+                    applications and working on interesting projects. <br> Here's a bit more <b class="blue click" onclick="toggleModal()">about me.
                     </b>
                 </p>
                 <div class="social__list">
@@ -186,8 +186,10 @@
         <div class="container">
             <div class="row">
                 <h1 class="section__title"> Here are some of my <span class="blue"> projects </span></h1>
-                <ul class="projects__list">
-                    <li class="project">
+        
+                <div class="projects">
+                    <ul class="projects__list">
+                    <li class="project">        
                         <div class="project__wrapper">
                             <img src="./assets/SmartHomePlantPot.jpeg" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
@@ -199,7 +201,7 @@
                                     <a href="https://github.com/ahmyk9/Smart-Home-Plant-Pot" target="_blank" class="project__description--links">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="#" class="project__description--links">
+                                    <a href="https://github.com/ahmyk9/Smart-Home-Plant-Pot" target="_blank" class="project__description--links">
                                         <i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>
@@ -216,10 +218,10 @@
                                 <p class="project__description--para"> Its a Java GUI Program, in which UTS Staff can login and out and add, edit or delete students studying at UTS.
                                     This was an Assignment to assess our OOP (Object Oriented Programming) skills </p>
                                 <div class="project__description--links">
-                                    <a href="https://github.com/ahmyk9/UTS-Tuition-Management-System" class="project__description--links">
+                                    <a href="https://github.com/ahmyk9/UTS-Tuition-Management-System" target="_blank" class="project__description--links">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="#" class="project__description--links">
+                                    <a href="https://github.com/ahmyk9/UTS-Tuition-Management-System" target="_blank" class="project__description--links">
                                         <i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>
@@ -235,10 +237,10 @@
                                 <h4 class="project__description--sub-title"> Languages used: HTML and CSS </h4>
                                 <p class="project__description--para"> HTML and CSS based Website only. This was my first attempt of a E-Commerce Website! </p>
                                 <div class="project__description--links">
-                                    <a href="https://github.com/ahmyk9/Clothing-Store" class="project__description--links">
+                                    <a href="https://github.com/ahmyk9/Clothing-Store" target="_blank" class="project__description--links">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="https://ahmyk9.github.io/Clothing-Store/" class="project__description--links">
+                                    <a href="https://ahmyk9.github.io/Clothing-Store/" target="_blank" class="project__description--links">
                                         <i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>
@@ -254,10 +256,10 @@
                                 <h4 class="project__description--sub-title"> Languages used: HTML and CSS </h4>
                                 <p class="project__description--para"> I cloned the T React Website Page to practice and test myself of my HTML and CSS skills </p>
                                 <div class="project__description--links">
-                                    <a href="https://github.com/ahmyk9/T-React-Clone" class="project__description--links">
+                                    <a href="https://github.com/ahmyk9/T-React-Clone" target="_blank" class="project__description--links">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="https://ahmyk9.github.io/T-React-Clone/" class="project__description--links">
+                                    <a href="https://ahmyk9.github.io/T-React-Clone/" target="_blank" class="project__description--links">
                                         <i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>
@@ -265,6 +267,8 @@
                         </div>
                     </li>
                 </ul>
+                </div>
+
             </div>
         </div>
     </section>
@@ -285,12 +289,13 @@
                 link__hover-effect
                 link__hover-effect--white
                 "> LinkedIn </a>
-                    <a href="#" target="blank" class="
+                    <a href="#" target="blank" onclick="toggleModal()" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
-                "> Contact </a>
-                    <a href="#" target="blank" class="
+                " 
+                > Contact </a>
+                    <a href="./assets/Ahmed Khilji Resume.pdf" target="blank"  target="_blank" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
