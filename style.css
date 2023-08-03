@@ -176,7 +176,9 @@ nav,
     background-color: #1d1d1f;
 }
 
-.dark-theme #personal-logo {
+.dark-theme #personal-logo
+/* .dark-theme .undraw  */
+{
     filter: invert(1);
 }
 
@@ -212,7 +214,7 @@ nav,
 
 .header{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -685,12 +687,14 @@ footer{
 
 @media (max-width: 768px){
 
-    /* .header{
-        padding-top: 50px;
-    } */
+
 
     .title{
         font-size: 50px;
+    }
+
+    .section__title{
+        font-size: 32px;
     }
 
     .header__para{
@@ -727,8 +731,13 @@ footer{
 
 @media (max-width: 480px){
     .title{
-        font-size: 40px;
+        font-size: 50px;
     }
+
+    .section__title{
+        font-size: 32px;
+    }
+
 
     .header__para{
         font-size: 16px;
