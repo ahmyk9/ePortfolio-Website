@@ -56,5 +56,13 @@ function toggleModal(){
 
         isModalOpen = true;
         document.body.classList += " modal--open"
-    
+
+        //Scroll to the very top of the page
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+
+        
 }
+
+
+
