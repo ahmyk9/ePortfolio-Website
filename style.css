@@ -631,7 +631,8 @@ nav{
 }
 
 .project__description--title{
-    font-size: 40px;
+    font-size: 36px;
+    padding: 20px 0;
     
 }
 
@@ -641,9 +642,10 @@ nav{
 
 .project__description--links{
     color: white;
-    font-size: 20px;
-    margin-right: 16px;
-
+    font-size: 30px;
+    margin-right: 50px;
+    padding: 20px 0;
+    
 }
 
 .project__description--para{
