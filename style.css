@@ -15,11 +15,6 @@ button{
     cursor: pointer;
 }
 
-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #personal-logo{
     width: 100px;
@@ -328,6 +323,8 @@ nav{
 
 .nav__link--list{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav__link{
