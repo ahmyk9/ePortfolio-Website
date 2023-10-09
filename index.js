@@ -60,8 +60,7 @@ function toggleModal(){
         //Scroll to the very top of the page
         document.body.scrollTop = 0; 
         document.documentElement.scrollTop = 0; 
-
-        
+     
 }
 
 
