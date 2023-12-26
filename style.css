@@ -637,6 +637,8 @@ nav{
 
 
 .project__wrapper{
+    height: 500px;
+
     position: relative;
     border-radius: 20px;
     box-shadow: 0 20px 80px 0 black;
@@ -781,6 +783,9 @@ footer{
         margin-right: 16px;
     
     }
+    .project__wrapper{
+        height: 150px;
+    }
 }
 
 /* small phones */
@@ -845,5 +850,8 @@ footer{
     
     }
 
+    .project__wrapper{
+        height: 150px;
+    }
 
 }
