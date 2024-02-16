@@ -166,7 +166,8 @@ nav,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
-.dark-theme .header__para
+.dark-theme .header__para,
+.dark-theme .nav__title
 {
  color: white;
 
@@ -318,6 +319,10 @@ nav{
     margin: 0 auto;
     height: 100px;
     padding: 0 20px;
+}
+
+.nav__title{
+    font-size: 28px;
 }
 
 .nav__link--list{
@@ -746,6 +751,9 @@ footer{
 @media (max-width: 768px){
 
 
+    .nav__title{
+        font-size: 0px;
+    }
 
     .title{
         font-size: 50px;
@@ -789,6 +797,11 @@ footer{
 /* small phones */
 
 @media (max-width: 480px){
+
+    .nav__title{
+        font-size: 0px;
+    }
+
     .title{
         font-size: 50px;
     }
