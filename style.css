@@ -761,7 +761,7 @@ footer{
         font-size: 0px;
     }
 
-    .title{
+    .title, .title__hi{
         font-size: 50px;
     }
 
@@ -808,7 +808,7 @@ footer{
         font-size: 0px;
     }
 
-    .title{
+    .title , .title__hi{
         font-size: 50px;
     }
 
