@@ -106,6 +106,12 @@ input:hover, textarea:focus{
     text-align: left;
     line-height: 1;
 }
+.title__hi{
+    font-size: 80px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1;
+}
 
 .blue {
     color: #4477ff;
@@ -161,14 +167,14 @@ nav,
 
 /* DARK THEME */
 
-.dark-theme .title ,
+
 .dark-theme .section__title,
+.dark-theme .title__hi,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
 .dark-theme .header__para,
-.dark-theme .nav__title
-{
+.dark-theme .nav__title{
  color: white;
 
 }
