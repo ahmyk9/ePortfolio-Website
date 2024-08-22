@@ -6,6 +6,13 @@
     box-sizing: border-box;
     font-family: 'Roboto', 'sans-serif';
     scroll-behavior: smooth;
+
+    
+}
+
+body{
+    cursor: url("assets/cursor.png"), auto;
+    
 }
 
 a{
@@ -21,11 +28,12 @@ button{
     width: 100px;
     height: 100px;
     filter: invert(0);
-
+    
 }
 
 li{
     list-style-type: none;
+    
 }
 
 
