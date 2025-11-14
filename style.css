@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -286,6 +298,7 @@ nav,
     right: 40px;
     z-index: 100;
     box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.28);
+    animation: bounce 2s infinite;
 }
 
 .scroll{
